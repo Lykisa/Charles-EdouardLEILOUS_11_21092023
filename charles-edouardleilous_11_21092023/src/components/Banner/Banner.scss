@@ -1,0 +1,33 @@
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 25px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.banner img {
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.banner h1 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-weight: 500;
+    cursor: default;
+}
+
+.bannerFilter {
+    height: 100%;
+    width: 1240px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 5;
+    background: #000000;
+    opacity: 0.3;
+    mix-blend-mode: darken;
+}
