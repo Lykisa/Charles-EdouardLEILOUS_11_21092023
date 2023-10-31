@@ -37,24 +37,3 @@ h3 {
     list-style: none;
     font-family: "Montserrat", sans-serif;
 }
-
-@media screen and (max-width:430px) {
-    .dropdown {
-        margin: 20px 0 0 0;
-    }
-    h3 {
-        font-size: 13px;
-    }
-    .dropdown_header {
-        height: 30px;
-    }
-    .dropdown_header img {
-        width: 15px;
-        height: 9px;
-    }
-    .dropdown p,
-    .dropdown ul {
-        font-size: 12px;
-        padding: 25px 7px 25px 11px;
-    }
-  }

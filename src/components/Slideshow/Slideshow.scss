@@ -37,22 +37,3 @@
     color: white;
 }
 
-@media screen and (max-width:430px) {
-    .slider {
-        width: 100%;
-        height: 255px;
-        border-radius: 10px;
-    }
-    .slider .arrowLeft, 
-    .slider .arrowRight {
-        width: 12px;
-        height: 20px;
-    }
-    .slider .arrowLeft {
-        margin-left: 5px;
-    }
-    .slider .arrowRight {
-        margin-right: 5px;
-    }
-    
-}
