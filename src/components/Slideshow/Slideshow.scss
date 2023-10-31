@@ -1,0 +1,58 @@
+.slider {
+    height: 415px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.slider .navigation{
+    height: 100%;
+    display: grid;
+    grid-template-areas: ". . ."
+    "prev . next"
+    ". position .";
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.slider .arrowLeft{
+    grid-area: prev;
+    margin-left: 25px;
+} 
+
+.slider .arrowRight{
+    grid-area: next;
+    margin-right: 25px;
+    justify-self: right;
+}
+
+.slider .arrowLeft,
+.slider .arrowRight {
+    align-self: center;
+}
+
+.slider p{
+    grid-area: position;
+    text-align: center;
+    align-self: flex-end;
+    color: white;
+}
+
+@media screen and (max-width:430px) {
+    .slider {
+        width: 100%;
+        height: 255px;
+        border-radius: 10px;
+    }
+    .slider .arrowLeft, 
+    .slider .arrowRight {
+        width: 12px;
+        height: 20px;
+    }
+    .slider .arrowLeft {
+        margin-left: 5px;
+    }
+    .slider .arrowRight {
+        margin-right: 5px;
+    }
+    
+}

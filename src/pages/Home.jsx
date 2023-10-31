@@ -5,7 +5,6 @@ import Card from "../components/Card/Card.jsx"
 import logements from "../data/logements.json";
 
 function Home() {
-    console.table(logements)
     return (
         <div>
             <Banner 
