@@ -1,5 +1,5 @@
 
-import "../style/Logement.scss"
+import "../style/Logement.css"
 import logements from "../data/logements.json";
 import { useParams } from "react-router"
 import Tag from "../components/Tag/Tag.jsx";
@@ -20,27 +20,28 @@ function Logement(){
             <div>
                 <Slideshow pictures={log.pictures} />
             </div>
-            <div className="logement_first">
-                <div className="logement_details">
-                    <h1 className="log_title">{log.title}</h1>
-                    <h2 className="log_location">{log.location}</h2>
-                </div>
-                <div className="logement_host">
-                    <div className="host_details">
-                        <h2 className="host_name">{log.host.name}</h2>
-                        <img src={log.host.picture} alt={log.host.name} />
+            <div className="logement_description">
+                <div className="logement_first">
+                    <div className="logement_details">
+                        <h1 className="log_title">{log.title}</h1>
+                        <h2 className="log_location">{log.location}</h2>
+                    </div>
+                    <div className="logement_tags">
+                        {log.tags.map((tag => (
+                            <Tag tagName={tag} key={tag} />
+                        )))}
                     </div>
                 </div>
-            </div>
-
-            <div className="logement_second">
-                <div className="logement_tags">
-                    {log.tags.map((tag => (
-                        <Tag tagName={tag} key={tag} />
-                    )))}
-                </div>
-                <div className="logement_rating">
-                    <Rating rating={log.rating} />
+                <div className="logement_second">
+                    <div className="logement_host">
+                        <div className="host_details">
+                            <h2 className="host_name">{log.host.name}</h2>
+                            <img src={log.host.picture} alt={log.host.name} />
+                        </div>
+                    </div>
+                    <div className="logement_rating">
+                        <Rating rating={log.rating} />
+                    </div>
                 </div>
             </div>
 

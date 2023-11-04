@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import "./Rating.scss"
+import "./Rating.css"
 
 function Rating(props) {
     const tableau = [1,2,3,4,5];

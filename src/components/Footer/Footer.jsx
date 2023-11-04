@@ -1,5 +1,5 @@
 import logo_footer from '../../assets/logo_footer.png'
-import './Footer.scss'
+import './Footer.css'
 
 const Footer = () => {//Create a footer frame
   return (

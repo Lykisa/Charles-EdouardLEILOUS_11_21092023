@@ -1,16 +1,18 @@
-import '../style/About.scss';
+import '../style/About.css';
 import bannerAbout from '../assets/banner_about.png';
 import Banner from '../components/Banner/Banner';
 import Collapse from '../components/Collapse/Collapse';
 
 function About() {
     return (
-        <div>
-            <Banner 
-                img={bannerAbout}
-                imgDescription={"Paysage de montagne"}/>
+        <div className='about'>
+            <div className='about_banner'>
+                <Banner 
+                    img={bannerAbout}
+                    imgDescription={"Paysage de montagne"}/>
+            </div>
             
-            <section>
+            <section className='about_collapse'>
                 <Collapse title ="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes"/>
                 <Collapse title ="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>
                 <Collapse title ="Service" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme"/>

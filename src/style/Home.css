@@ -24,3 +24,27 @@ a{
   margin-left: 280px;
   margin-top: 50px;
 }
+
+@media screen and (max-width:375px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .home {
+    width: 100%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+  }
+  .locations {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    background-color: transparent;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+  }
+}

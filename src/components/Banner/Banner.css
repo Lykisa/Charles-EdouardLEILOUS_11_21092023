@@ -31,3 +31,13 @@
     opacity: 0.3;
     mix-blend-mode: darken;
 }
+
+@media screen and (max-width:375px) {
+    .banner img {
+        width: 120%;
+    }
+    .bannerFilter {
+        width: 120%;
+    }
+    
+}

@@ -1,4 +1,4 @@
-import "./Collapse.scss"
+import "./Collapse.css"
 import arrowDown from "../../assets/arrow_down.png"
 import PropTypes from 'prop-types';
 import { useState } from "react";

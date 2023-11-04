@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./Banner.scss"
+import "./Banner.css"
 
 function Banner({ text, img, imgDescription }) {
   return (

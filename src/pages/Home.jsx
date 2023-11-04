@@ -1,4 +1,4 @@
-import "../style/Home.scss"
+import "../style/Home.css"
 import banner from "../assets/banner.png"
 import Banner from "../components/Banner/Banner.jsx"
 import Card from "../components/Card/Card.jsx"
@@ -6,7 +6,7 @@ import logements from "../data/logements.json";
 
 function Home() {
     return (
-        <div>
+        <div className="home">
             <Banner 
                 text={"Chez vous, partout et ailleurs"}
                 img={banner}

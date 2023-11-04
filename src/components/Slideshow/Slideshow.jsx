@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from 'prop-types';
-import "./Slideshow.scss"
+import "./Slideshow.css"
 import arrowLeft from "../../assets/arrow_left.png"
 import arrowRight from "../../assets/arrow_right.png"
 /* let index = 0 */
@@ -10,12 +10,18 @@ function Slideshow({ pictures }) {
 
   function next() {
     /* setReload(reload++) */
-    if (reload == pictures.length - 1) setReload(0); else setReload(reload++)
+    if (reload == pictures.length - 1) 
+      setReload(0); 
+    else 
+      setReload(reload+1)
     /* setReload(index) */
   }
   function prev() {
     /* setReload(reload--) */
-    if (reload == 0) setReload(pictures.length - 1); else setReload(reload--)
+    if (reload == 0) 
+      setReload(pictures.length - 1); 
+    else 
+      setReload(reload-1)
     /* setReload(index) */
   }
 

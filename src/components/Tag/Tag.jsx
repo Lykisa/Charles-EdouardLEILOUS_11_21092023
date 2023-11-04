@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import "./Tag.scss"
+import "./Tag.css"
 
 function Tag(props) {
     return <p className='tagName'>{props.tagName}</p>
