@@ -91,7 +91,7 @@ h1, h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px; */
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
