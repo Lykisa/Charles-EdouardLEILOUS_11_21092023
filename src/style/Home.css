@@ -36,10 +36,12 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-left: 150px;
   }
   .locations {
     grid-template-columns: 1fr;
+    width: 960px;
     border-radius: 0;
     background-color: transparent;
     grid-column-gap: 0;

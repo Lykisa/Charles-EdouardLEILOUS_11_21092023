@@ -119,7 +119,8 @@ h1, h2 {
     }
     .logement_section {
         width: 100%;
-        width: 1150px;
+        width: 950px;
+        margin-left: 70px;
     }
     .logement_description {
         flex-direction: column;
@@ -133,5 +134,14 @@ h1, h2 {
     .logement_collapse {
         flex-direction: column;
         gap: 30px;
+    }
+    .log_title {
+        font-size: 50px;
+    }
+    .log_location {
+        font-size: 25px;
+    }
+    .host_name {
+        font-size: 25px;
     }
   }

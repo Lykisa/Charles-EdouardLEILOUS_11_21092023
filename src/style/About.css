@@ -6,12 +6,14 @@
     }
     .about_banner {
         width: 100%;
-        width: 950px;
-        margin-left: 100px;
+        width: 800px;
+        margin-left: 150px;
     }
     .about_collapse {
+        width: 473px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
+        margin-left: 70px;
     }
   }

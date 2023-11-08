@@ -8,3 +8,10 @@
     padding: 5px 40px;
     margin: 10px 10px 0 0;
 }
+
+@media screen and (max-width:375px) {
+    .tagName {
+        height: 40px;
+        font-size: 25px;
+    }
+}
