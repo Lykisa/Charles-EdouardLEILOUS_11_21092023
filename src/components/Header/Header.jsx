@@ -1,6 +1,6 @@
 import logo from "../../assets/logo.png"
 import "./Header.css"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function Header() {
   return (
@@ -10,10 +10,10 @@ function Header() {
         <nav>
             <ul>
                 <li>
-                    <Link to="/"> Accueil</Link>
+                    <NavLink to="/" className={(homeCurrentPage) => homeCurrentPage.isActive ? "active" : ""}> Accueil</NavLink>
                 </li>
                 <li>
-                    <Link to="/about">A propos</Link> 
+                    <NavLink to="/about" className={(aboutCurrentPage) => aboutCurrentPage.isActive ? "active" : ""}>A propos</NavLink> 
                 </li>
             </ul>
         </nav>

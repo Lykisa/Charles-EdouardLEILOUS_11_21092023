@@ -12,7 +12,8 @@ h1, h2 {
 
 .logement_section {
     margin: 0 auto;
-    width: 1240px;
+    width: 100%;
+    /* padding: 0 350px; */
 }
 
 .logement_description {
@@ -91,7 +92,7 @@ h1, h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px; */
     width: 100%;
-    max-width: 1240px;
+    /* max-width: 1240px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -145,3 +146,11 @@ h1, h2 {
         font-size: 25px;
     }
   }
+
+@media screen and (max-width:1335px) and (min-width:375px) {
+    .logement_section {
+        width: 100%;
+        width: 1024px;
+        padding: 0 350px;
+    }
+}
