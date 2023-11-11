@@ -36,7 +36,7 @@ nav li :hover {
     text-decoration-line: underline;
 }
 
-@media screen and (max-width:1335px) and (min-width:375px)  {
+@media screen and (max-width:1335px) and (min-width:376px)  {
     header {
         width: 100%;
         width: 1024px;
@@ -52,7 +52,7 @@ nav li :hover {
         margin-left: 70px;
         padding: 0;
         padding-top: 50px;
-        width: 960px;
+        width: 800px;
         justify-content: space-between;
     }
     header img {
